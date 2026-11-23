@@ -12,7 +12,6 @@ from psycogreen import __version__
 
 classifiers = """
 Development Status :: 5 - Production/Stable
-License :: OSI Approved :: BSD License
 Operating System :: OS Independent
 Programming Language :: Python :: 2
 Programming Language :: Python :: 3
@@ -31,7 +30,8 @@ setup(
     author='Daniele Varrazzo',
     author_email='daniele.varrazzo@gmail.com',
     url='https://github.com/psycopg/psycogreen/',
-    license='BSD',
+    license_expression='BSD-3-Clause',
+    license_files=['COPYING'],
     packages=['psycogreen'],
     classifiers=[x for x in classifiers.split('\n') if x],
     version=__version__,
